@@ -1,0 +1,171 @@
+■SNFS文法説明
+
+	ここではSNFS(サウンドノベルフラッシュシステム)のdata.xmlの書きかたを説明します。
+	サウンドノベルの本体はXML自体なので、XMLのツールを利用して作成してもよいですし
+	テキストツールだけでも作れます。
+
+■SNFS例
+
+	SNFSで使用するdata.xmlは基本的に次のような構成になっています。
+
+	例
+
+	<SoundNovel>
+		<Scean>
+			<music filename="bgm/SoundNovel-Conversation.mp3"/>
+			<cg_file file="images/akari_laugh.png" align="right"/>
+			<text>
+				<BR>俺の手が彼女の、原灯里の手を握ることは、</BR>
+				<BR>教室の電気を点けるくらい簡単で、当たり前のことだった</BR>
+				<BR></BR>
+			</text>
+		</Scean>
+		<Sean>
+			<end>
+			</end>
+		</Scean>
+	</SoundNovel>
+
+■ init.xmlについて
+表示する文字の設定をします。
+
+例：
+<?xml version="1.0" encoding="UTF-8"?>
+<SoundNovelSetting>
+  <font>
+	<name>MS PGothic</name>
+	<size>23</size>
+	<fontcolor>0x000000</fontcolor>
+	<start_x>15</start_x>
+	<start_y>29</start_y>
+	<size_x>20</size_x>
+	<size_y>30</size_y>
+  </font>
+</SoundNovelSetting>
+
+ name : フォント名
+ size : フォントサイズ
+ fontcolor : 文字色
+ start_x : 表示する初期x座標
+ start_y : 表示する初期y座標
+ size_x : 表示する文字の横の大きさ
+ size_y : 表示する文字の縦の大きさ
+ 
+■　Data.xmlで使用する各種タグについて
+
+□□　ノベルタグ　□□
+
+	-<SoundNovel>
+
+	囲まれたところが全体になります。
+
+□□　シーンタグ　□□
+
+	-<Scean></Scean>
+
+	囲まれた所は１画面に表示される部分をあらわします。
+	
+	注意！
+	シーンタグは以下のようにtextタグとbrタグを３ついれておいてください。
+	textタグがない場合SNFSが正常に動作しません。
+	
+	<Scean>
+		<text>
+			<br></br>
+			<br></br>			
+			<br></br>
+		</text>
+	</Scean>
+	
+
+□□音楽タグ　□□
+
+	-<music file="ファイル名" />
+	-<bgm file="ファイル名" />も同じ意味です。
+	音楽を流す事をあらわします
+
+	-<se file="ファイル名" />
+	効果音を鳴らす事をあらわします
+	複数の音を何個も同時に鳴らせます
+
+例
+
+	<bgm file="bgm/SoundNovel-Conversation.mp3" />
+	<se file="bgm/se1.mp3" />
+
+□□ ＣＧタグ　□□
+
+	-<cg_file 
+	　  	file="表示画像ファイル(必須)"
+		align="left or center or rightのうちどれか(任意)"
+		x="画像のX座標を直接入力します(任意)" 
+		y="画像のＹ座標を直接入力します(任意)" 
+		scale="画像の大きさを指定します(1〜100%）(任意)" 
+		alpha="画像の透明度を指定します(1〜100%）(任意)"
+		effect="画像に適用するエフェクトを指定します。( fadein,fadeout )(複数指定する場合は [,] を私用すること)"
+		width="表示する画像の幅を設定します。"
+		height="表示する画像の高さを設定します。"
+	 >
+
+	ＣＧを表示します。
+	ＣＧタグは必須項目と任意項目があります。任意は指定しなくても動きます。
+
+	ＣＧファイルはjpeg,gif,ping,bmpに対応。透過イメージにも対応しています。
+	立ち絵として利用する場合は高さを360ピクセルで作成して下さい。
+
+□□ Flashタグ　□□
+
+	-<flash 
+	　  	file="swfファイル（必須)"
+		messagebox="off(任意)"
+	 >
+
+	swfファイルを読み込んで表示します。
+	例えば特殊なエフェクトを表示したかったり、
+	オープニング、エンディング用のswfファイルを読み込みます。
+	messagebox="off" をつける事でswfファイルを再生する際にテキスト表示を切ります。
+
+○キャラクター表示方法
+
+-背景表示
+
+例：
+
+		<cg_file file="images/black.jpg" />
+
+-人物表示
+
+例：
+
+		<cg_file file="images/cartman.png" align="right"/>
+
+○キャラクター・背景を消す方法
+
+	-<clear />
+	画面がクリアーされます。
+
+□□　テキストタグ　□□
+
+	<text
+		size="フォントサイズ"
+		size_x="Ｘ軸の大きさ"
+		size_y="Ｙ軸の大きさ"
+		font="フォント種類"
+		color="フォントカラー"
+	/>
+	<text></text>で囲まれた所が全体になります。
+	<BR></BR>で囲まれた所が一行になります。
+
+	また、３行表示しかできません。
+	最大文字数は半角で５５文字、よって全角だと２６〜７文字になります。
+
+□□　ENDタグ　□□
+
+例：
+	<end></end>
+
+	サウンドノベルを終了する場合、<Scean>の中に<end>タグを入れてください。
+	そうする事で、サウンドノベル駆動部分は終了します。
+	実際は、サウンドノベル部分でとめているフラッシュを次のフレームへ動かします。
+	こうする事で、サウンドノベルシステムの次のシーンへ移る事が可能になります。
+

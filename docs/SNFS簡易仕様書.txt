@@ -1,0 +1,69 @@
+***********************************************
+**
+**	2007.04.14
+**
+**	SNFS簡易仕様書
+**
+**	■製作者■
+**		石井高雅,池田健太
+**
+***********************************************
+
+	SNFSに内蔵されているファイルは以下の通りです。
+
+	//音楽フォルダ
+	bgm		----	test.mp3
+	//クラスフォルダ（必須）
+	classes		----	NovelGraphics.as
+			----	NovelScript.as
+			----	NovelSound.as
+			----	NovelText.as
+			----	NovelXML.as.......他
+	//ドキュメント
+	docs	----	----	SNFS簡易仕様書
+			----	SNFS文法説明
+			//UMLダイアグラム
+			diagram	----	SNFS Class Diagram.jpg
+					----	SNFS Use Activity Diagram.jpg
+					----	SNFS UseCase Diagram.jpg
+					----	SoundNovelFlashSystemUML.jude
+							(御覧になるには別途JUDEのインストールが必要です。)
+							http://jude.change-vision.com/jude-web/index.html
+	//画像フォルダ
+	images	----	black.jpg
+
+	init.xml
+	data.xml
+	SoundNovelXML.fla
+	SoundNovelXML.html
+	SoundNovelXML.swf
+	サウンドノベル.flp
+
+	data.xml、init.xmlを作成する事で簡単にサウンドノベルフラッシュが作成できます。
+	詳細な使い方については別途docsのSNFS文法説明を御覧下さい。
+
+■■　SNFS画像仕様書	■■
+
+	使える画像は次の通りです。
+
+	種類　	jpeg,bmp,png
+	大きさ	□ 背景
+		480 * 360 (ピクセル)
+		□ 立ち絵
+		160 * 360 (ピクセル)
+
+■■　SNFS音楽	■■
+
+	ビットレート 44khz	mp3形式ならば使用可能です。
+
+
+	*********************************************************************
+
+	御質問、ご連絡等々ありましたらば BZQ16235@nifty.ne.jpまでお願いいたします。
+
+	*********************************************************************
+
+
+池田プロダクション	石井高雅
+			池田健太
+

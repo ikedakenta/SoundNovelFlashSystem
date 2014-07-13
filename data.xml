@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SoundNovel>
+<Scean><text><br>スペースで早送り</br></text></Scean>
+<Scean>
+<text>
+	<br>サウンドノベルフラッシュシステムをダウンロード頂き</br>
+	<br>まことにありがとうございます！</br>
+	<br></br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>システムにはまだまだ至らぬ点がありますが、</br>
+	<br>今後も改良を重ね、おもしろいサウンドノベルが作られるよう</br>
+	<br>精進していきたいと思います。</br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>本編はチュートリアルノベルです。</br>
+	<br>詳しいタグの使い方というよりは、使い方を御紹介いたします。</br>
+	<br></br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>Xmlの書き方やSceanタグの扱いについては、</br>
+	<br>SNFS文法説明.txtをご確認ください。</br>
+	<br></br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>さて作者がサウスパーク好きの為、</br>
+	<br>サウスパーク風に物語は進んでいきます。</br>
+	<br>（画像はサウスパークスタジオで作りました。。。)</br>
+</text>
+</Scean>
+<Scean>
+<se file="bgm/southpark_busstop.mp3" volume="5"/>
+<cg_file file="images/scean/basstop_scean.png" alpha="100" x="-2" effect="fadein" />
+<cg_file file="images/stan_normal.png" alpha="100" x="65" y="220" width="180" height="130" effect="fadein" />
+<text><BR>スタン登場</BR><BR></BR><BR></BR></text>
+</Scean>
+<Scean>
+<cg_file file="images/kile_normal.png" alpha="100" x="150" y="228" width="180" height="130" effect="fadein" />
+<text><BR>カイル登場</BR><BR></BR><BR></BR></text>
+</Scean>
+<Scean>
+<cg_file file="images/cartman_normal.png" alpha="100" x="248" y="232" width="200" height="140" effect="fadein" />
+<text><BR>カートマン登場</BR><BR></BR><BR></BR></text>
+</Scean>
+<Scean>
+<cg_file file="images/myself_normal.png" alpha="100" x="360" y="213" width="200" height="140" effect="fadein" />
+<text><BR>いしい登場</BR><BR></BR><BR></BR></text>
+</Scean>
+<Scean>
+<text>
+	<br>SEと共に背景が表示され</br>
+	<br>クリックすると人物が増えていきました。</br>	<br></br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>これは「SEタグ」と「CG_FILE」タグを使っています。</br>
+	<br>SEタグはMP3を指定して音を鳴らすことができます。</br>
+	<br>CG_FILEタグは画像ファイルを指定して画像表示ができます。</br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>CG_FILEタグは様々なパラメーターがあります。</br>
+	<br>座標、大きさ、アルファ値、また画像表示エフェクトの設定等</br>
+	<br></br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>これらの詳細については本チュートリアルのxmlか</br>
+	<br>docs/SNFS文法説明.txtをご覧ください。</br>
+	<br></br>
+</text>
+</Scean>
+<Scean>
+<clear />
+<cg_file file="images/scean/basstop_scean_cartman.gif" alpha="100" x="-2" effect="fadein,fadeout" />
+<cg_file file="images/cartman_normal.png" alpha="100" width="600" height="420" x="70" y="50" width="430" height="360" effect="fadein" />
+<text><BR>画面切り替え</BR><BR>カートマンアップ</BR><BR></BR>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>このような画面の切り替えについて説明します。</br>
+	<br></br>
+	<br></br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>まずClearタグを呼び出し、全ての画像を削除します。</br>
+	<br>その後、「CG_FILE」タグを使って画像を切り替えています。</br>
+	<br></br>
+</text>
+</Scean>
+<Scean>
+<clear />
+<text>	<br></br><br></br><br></br>  </text>
+</Scean>
+<Scean>
+<cg_file file="images/scean/basstop_scean.png" alpha="100" x="-2" effect="fadein" />
+<cg_file file="images/stan_normal.png" alpha="100" x="65" y="220" width="180" height="130" effect="fadein" />
+<cg_file file="images/kile_normal.png" alpha="100" x="150" y="228" width="180" height="130" effect="fadein" />
+<cg_file file="images/cartman_normal.png" alpha="100" x="248" y="232" width="200" height="140" effect="fadein" />
+<cg_file file="images/myself_normal.png" alpha="100" x="360" y="213" width="200" height="140" effect="fadein" />
+<text color="0xee0000"><BR>全員集合</BR><BR></BR><BR></BR></text>
+</Scean>
+<Scean>
+<text>
+	<br>文字の色も文章の途中でかえることができます。</br>
+	<br></br>
+	<br></br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>textタグにcolor="0xFFFFFF"のように</br>
+	<br>指定したい色を決めてください。</br>
+	<br>注意点としては#ではなく0xと書かないといけません。</br>
+</text>
+</Scean>
+<Scean>
+<clear />
+<text>	<br></br><br></br><br></br>  </text>
+</Scean>
+<Scean>
+<cg_file file="images/scean/basstop_scean_cartman.gif" alpha="100" x="-2" effect="fadein,fadeout" />
+<cg_file file="images/cartman_normal.png" alpha="100" width="600" height="420" x="70" y="50" width="430" height="360" effect="fadein" />
+<text><BR>画面切り替え</BR><BR>カートマンアップ</BR><BR></BR>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>ここまでご覧になって頂きありがとうございます！</br>
+	<br></br>
+	<br></br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>SNFSを使ってできる基本的な機能を御紹介いたしました。</br>
+	<br></br>
+	<br></br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>その他には、設定ファイルを使ったテキストの表示設定や</br>
+	<br>テキストの色変更などがあります。</br>
+	<br></br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>今後はエフェクト処理やシナリオの分岐などをつくる予定です。</br>
+	<br></br>
+	<br></br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>以上でチュートリアルを終了いたしますが、</br>
+	<br>ご不明な点などありましたらばお気軽にご連絡ください。</br>
+	<br></br>
+</text>
+</Scean>
+<Scean>
+<text>
+	<br>サウンドノベルを作ったらぜひ教えてください〜。</br>
+	<br>どうもありがとうございました！</br>
+	<br></br>
+</text>
+</Scean>
+<Scean><end></end></Scean>
+</SoundNovel>

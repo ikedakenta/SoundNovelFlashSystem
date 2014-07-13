@@ -1,0 +1,30 @@
+﻿<flash_project name="サウンドノベル" version="1">
+    <project_folder name="XML" expanded="true">
+        <project_file path="./classes/NovelXML.as" filetype="as" />
+        <project_file path="./classes/NovelStoryXML.as" filetype="as" />
+        <project_file path="./classes/NovelInitialXML.as" filetype="as" />
+    </project_folder>
+    <project_folder name="SAVE" expanded="true">
+        <project_file path="./classes/NovelSave.as" filetype="as" />
+        <project_file path="./classes/NovelSceanSave.as" filetype="as" />
+    </project_folder>
+    <project_folder name="TEXT" expanded="true">
+        <project_file path="./classes/NovelText.as" filetype="as" />
+        <project_file path="./classes/NovelScript.as" filetype="as" />
+    </project_folder>
+    <project_folder name="CG" expanded="true">
+        <project_file path="./classes/NovelEffect.as" filetype="as" />
+        <project_file path="./classes/NovelGraphics.as" filetype="as" />
+    </project_folder>
+    <project_folder name="SOUND" expanded="true">
+        <project_file path="./classes/NovelSound.as" filetype="as" />
+    </project_folder>
+    <project_folder name="UI" expanded="true">
+        <project_file path="./classes/NovelMenu.as" filetype="as" />
+    </project_folder>
+    <project_folder name="RESOURCE" expanded="true">
+        <project_file path="./data.xml" filetype="xml" />
+        <project_file path="./init.xml" filetype="xml" />
+    </project_folder>
+    <project_file path="./SoundNovelXML.fla" filetype="fla" profile="" def_file="true" />
+</flash_project>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SoundNovelSetting>
+  <font>
+	<name>_等幅</name>
+	<size>15</size>
+	<fontcolor>0xFFFFFF</fontcolor>
+	<start_x>15</start_x>
+	<start_y>293</start_y>
+	<size_x>15</size_x>
+	<size_y>18</size_y>
+  </font>
+</SoundNovelSetting>
